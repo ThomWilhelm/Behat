@@ -93,6 +93,16 @@ final class CallResult
     }
 
     /**
+     * Sets exception for call.
+     *
+     * @return null|Exception
+     */
+    public function setException(Exception $exception)
+    {
+        $this->exception = $exception;
+    }
+
+    /**
      * Checks if call produced stdOut.
      *
      * @return Boolean
